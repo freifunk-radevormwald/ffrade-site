@@ -1,7 +1,14 @@
-#### How to build the Freifunk Radevormwald Firmware (Gluon v2015.2)
+#### How to build the Freifunk Radevormwald beta Firmware (Gluon 2016.1)
     
-    git clone https://github.com/freifunk-gluon/gluon.git gluon -b v2015.1.2    # Get the official Gluon repository
+    # Get the official Gluon repository
+    git clone https://github.com/freifunk-gluon/gluon.git gluon -b master
+    
+    # Get the Freifunk Radevormwald site repository
     cd gluon
-    git clone https://github.com/steneu/ffrade-site.git site                    # Get the Freifunk Mayen-Koblenz site repository
-    make update                                                                 # Get other repositories used by Gluon
-    make GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable -j4                    # Build Gluon
+    git clone https://github.com/freifunk-radevormwald/site.git site
+    
+    # Get other repositories used by Gluon
+    make update
+    
+    # Build Gluon
+    make -j4 GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
