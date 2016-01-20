@@ -20,3 +20,8 @@
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
+
+GLUON_SITE_FEEDS='ssidchanger'
+PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
+PACKAGES_SSIDCHANGER_COMMIT=9277f6d8b0a31889178e4c326c204f2a6e61ab29
+PACKAGES_SSIDCHANGER_BRANCH=chaos-calmer
