@@ -1,7 +1,7 @@
-#### How to build the Freifunk Radevormwald beta Firmware (Gluon 2016.1)
+#### How to build the Freifunk Radevormwald Firmware (Gluon 2016.1)
     
     # Get the official Gluon repository
-    git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b master
+    git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2016.1.x
     
     # Get the Freifunk Radevormwald site repository
     cd gluon-rdv
