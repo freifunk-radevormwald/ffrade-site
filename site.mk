@@ -8,7 +8,6 @@ GLUON_SITE_PACKAGES := \
     gluon-mesh-batman-adv-15 \
     gluon-alfred \
     gluon-respondd \
-    gluon-neighbour-info \
     gluon-autoupdater \
     gluon-config-mode-autoupdater \
     gluon-config-mode-contact-info \
@@ -28,9 +27,9 @@ GLUON_SITE_PACKAGES := \
     gluon-setup-mode \
     gluon-status-page \
     gluon-ssid-changer \
-    iwinfo \
-    iptables \
     haveged \
+    iptables \
+    iwinfo \
     
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
