@@ -1,0 +1,21 @@
+####Firmware Historie der Radevormwalder Freifunk Firmware
+
+#####gluon-ffrade-0.7.2-rdv-20160312
+Gluon 2016.1.2
+Fehler bei ubiquiti factory Images behoben
+Fehler bei TL-WR841N v5 geräten behoben
+unterstützung für FUTRO Thin Clients
+
+#####gluon-ffrade-0.7.2-rdv-20160211
+Gloun 2016.1
+Wechsel auf OpenWrt 15.05.
+alle 10 wupperserver (w0-w9) integriert
+eigene fastd und updatserver vorbereitet
+unterstützung neuer Routermodelle (TL-WR841 v10, DIR505, ...)
+ssid-changer packages integriert
+neue Statusseite
+
+#####gluon-ffrade-0.6.0-rdv-20150206:
+Gluon 2014.4
+Erste Firmware auf Basis von Gluon
+fastd und updatserver über wupper (w0, w1, w7)
