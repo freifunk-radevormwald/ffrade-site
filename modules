@@ -30,3 +30,8 @@ GLUON_SITE_FEEDS="aptimeclock"
 PACKAGES_APTIMECLOCK_REPO=https://github.com/freifunk-radevormwald/gluon-aptimeclock.git
 PACKAGES_APTIMECLOCK_COMMIT=8dcc644e3a62ff11dc3b098e37c0909f6b8a35c1
 PACKAGES_APTIMECLOCK_BRANCH=master
+
+GLUON_SITE_FEEDS="keepradiochannel"
+PACKAGES_KEEPRADIOCHANNEL_REPO=https://github.com/freifunk-radevormwald/gluon-keep-radio-channel.git
+PACKAGES_KEEPRADIOCHANNEL_COMMIT=6622090d46e545af54fc714f9ede7b4aee55ff34
+PACKAGES_KEEPRADIOCHANNEL_BRANCH=master
