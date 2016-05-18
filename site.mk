@@ -28,7 +28,6 @@ GLUON_SITE_PACKAGES := \
     gluon-status-page \
     gluon-ssid-changer \
     gluon-aptimeclock \
-    gluon-keep-radio-channel \
     haveged \
     iptables \
     iwinfo \
