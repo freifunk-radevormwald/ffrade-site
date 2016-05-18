@@ -27,6 +27,7 @@ GLUON_SITE_PACKAGES := \
     gluon-setup-mode \
     gluon-status-page \
     gluon-ssid-changer \
+    gluon-aptimeclock \
     haveged \
     iptables \
     iwinfo \
