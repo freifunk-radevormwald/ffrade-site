@@ -1,5 +1,13 @@
 ####Firmware Historie der Radevormwalder Freifunk Firmware
 
+#####gluon-ffrade-0.7.3-rdv-20160519
+Gluon 2016.1.2
+Modul "Client WLAN on/off Scrip" integriert (https://github.com/freifunk-radevormwald/gluon-aptimeclock)
+Modul "Keep Radio Channel after update Script" integriert (https://github.com/freifunk-radevormwald/gluon-keep-radio-channel)
+Fastd mesh vpn remotes auf "x.freifunk-radevormwald.de" reduziert, um per Rader DNS gezielt tote Server "abschalten" zu können.
+Mcast rate erhöht, um nicht nutzbare Mesh-Links zu reduzieren und mehr Airtime zu schaffen
+Ntp und Updateserver angepasst
+
 #####gluon-ffrade-0.7.2-rdv-20160312
 Gluon 2016.1.2
 Fehler bei ubiquiti factory Images behoben
