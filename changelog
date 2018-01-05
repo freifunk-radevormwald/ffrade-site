@@ -1,5 +1,15 @@
 ####Firmware Historie der Radevormwalder Freifunk Firmware
 
+#####gluon-ffrade-0.8.1-rdv-20180105
+Gluon 2017.1.4
+Firmware Basis von OpenWRT zu LEDE gewechselt. Wobei die beiden Projekte mittlerweile wieder vereint sind.
+Neues Paketversion des gluon-ssid-changer (https://github.com/freifunk-radevormwald/packages.git) Branch: lede
+Neues Paketversion des gluon-aptimeclock (https://github.com/freifunk-radevormwald/packages.git) Branch: lede
+gluon-ssid-changer über site.conf definiert und im Config Mode verfügbar
+Unterstützung für alfred entfernt
+Fastd mesh vpn Keys von rade2 rade3 rade4 rade5 und rade6 ergänzt
+Neuere Routermodelle und Versionen werden unterstützt
+
 #####gluon-ffrade-0.7.3-rdv-20160519
 Gluon 2016.1.2
 Client WLAN on/off Modul integriert (https://github.com/freifunk-radevormwald/gluon-aptimeclock)
