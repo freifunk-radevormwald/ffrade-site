@@ -21,16 +21,7 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-GLUON_SITE_FEEDS='ssidchanger aptimeclock keepradiochannel'
-
-PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
-PACKAGES_SSIDCHANGER_COMMIT=93211d9a57abf8a3d29bd5e48acd71486d8e7829
-PACKAGES_SSIDCHANGER_BRANCH=chaos-calmer
-
-PACKAGES_APTIMECLOCK_REPO=https://github.com/freifunk-radevormwald/gluon-aptimeclock.git
-PACKAGES_APTIMECLOCK_COMMIT=8dcc644e3a62ff11dc3b098e37c0909f6b8a35c1
-PACKAGES_APTIMECLOCK_BRANCH=master
-
-PACKAGES_KEEPRADIOCHANNEL_REPO=https://github.com/freifunk-radevormwald/gluon-keep-radio-channel.git
-PACKAGES_KEEPRADIOCHANNEL_COMMIT=f294e3f4b89ffc66fe3878c5379e8bdd67303c4a
-PACKAGES_KEEPRADIOCHANNEL_BRANCH=master
+GLUON_SITE_FEEDS='packages'
+PACKAGES_PACKAGES_REPO=https://github.com/freifunk-radevormwald/packages.git
+PACKAGES_PACKAGES_COMMIT=e3dc15822ca5c8f033cd7972e1a673f479b404f7
+PACKAGES_PACKAGES_BRANCH=lede
