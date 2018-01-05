@@ -1,12 +1,9 @@
 ##	gluon site.mk makefile
 
 ##	GLUON_SITE_PACKAGES
-#		specify gluon/openwrt packages to include here
-#		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
+#		specify Gluon/LEDE packages to include here
 
 GLUON_SITE_PACKAGES := \
-    gluon-mesh-batman-adv-15 \
-    gluon-alfred \
     gluon-respondd \
     gluon-autoupdater \
     gluon-config-mode-autoupdater \
@@ -17,29 +14,27 @@ GLUON_SITE_PACKAGES := \
     gluon-config-mode-mesh-vpn \
     gluon-ebtables-filter-multicast \
     gluon-ebtables-filter-ra-dhcp \
-    gluon-luci-admin \
-    gluon-luci-autoupdater \
-    gluon-luci-portconfig \
-    gluon-luci-wifi-config \
-    gluon-next-node \
-    gluon-mesh-vpn-fastd \
+    gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-network \
+	gluon-web-wifi-config \
+    gluon-mesh-batman-adv-15 \
+	gluon-mesh-vpn-fastd \
     gluon-radvd \
-    gluon-setup-mode \
-    gluon-status-page \
-    gluon-ssid-changer \
+	gluon-setup-mode \
+	gluon-status-page \
+	gluon-ssid-changer \
     gluon-aptimeclock \
-    gluon-keep-radio-channel \
     haveged \
-    iptables \
-    iwinfo \
-    
+	iwinfo
+        
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
 #		gluon relies on
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 0.7.3-rdv-$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.8.1-rdv-$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE
@@ -54,6 +49,9 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
+
+# Region code required for some images; supported values: us eu
+GLUON_REGION ?= eu
 
 # Languages to include
 GLUON_LANGS ?= en de
