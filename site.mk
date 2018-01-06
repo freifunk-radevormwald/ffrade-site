@@ -15,18 +15,18 @@ GLUON_SITE_PACKAGES := \
     gluon-ebtables-filter-multicast \
     gluon-ebtables-filter-ra-dhcp \
     gluon-web-admin \
-	gluon-web-autoupdater \
-	gluon-web-network \
-	gluon-web-wifi-config \
+    gluon-web-autoupdater \
+    gluon-web-network \
+    gluon-web-wifi-config \
     gluon-mesh-batman-adv-15 \
-	gluon-mesh-vpn-fastd \
+    gluon-mesh-vpn-fastd \
     gluon-radvd \
-	gluon-setup-mode \
-	gluon-status-page \
-	gluon-ssid-changer \
+    gluon-setup-mode \
+    gluon-status-page \
+    gluon-ssid-changer \
     gluon-aptimeclock \
     haveged \
-	iwinfo
+    iwinfo
         
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
