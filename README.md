@@ -14,6 +14,7 @@
     
     # Build Gluon
     make -j4 GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
+    make -j4 GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable       (generic devices, mit nur 4 MB Flash) 
     make -j4 GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
     
     # Im Fehlerfall Build Gluon mit -j1 V=s wiederholden um geneue Infos zum Fehler zu erhalten
