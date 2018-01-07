@@ -5,6 +5,7 @@
 
 GLUON_SITE_PACKAGES := \
     gluon-respondd \
+    respondd-module-airtime \
     gluon-autoupdater \
     gluon-config-mode-autoupdater \
     gluon-config-mode-contact-info \
