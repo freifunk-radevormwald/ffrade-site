@@ -29,3 +29,11 @@ msgstr ""
 "<p>More information regarding Freifunk you will find on"
 "<a href=\"http://www.freifunk-radevormwald.de/\">freifunk-radevormwald.de</a>. </p>"
 "<p>Have fun with Freifunk!</p>"
+
+msgid "gluon-config-mode:altitude-label"
+msgstr "Altitude"
+
+msgid "gluon-config-mode:altitude-help"
+msgstr ""
+"Specifying the altitude is optional and should only be done if a proper "
+"value is known."
