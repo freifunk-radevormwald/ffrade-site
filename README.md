@@ -7,7 +7,7 @@
     git checkout v2017.1.4 (gewünschten Tag setzen)
     
     # Get the Freifunk Radevormwald site repository
-    git clone https://github.com/freifunk-radevormwald/ffrade-site.git ffrade-site
+    git clone https://github.com/freifunk-radevormwald/ffrade-site.git site
     
     # Get other repositories used by Gluon
     make update
