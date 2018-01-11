@@ -26,6 +26,7 @@ GLUON_SITE_PACKAGES := \
     gluon-status-page \
     gluon-ssid-changer \
     gluon-aptimeclock \
+    gluon-authorized-keys \
     haveged \
     iwinfo
         
