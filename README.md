@@ -7,7 +7,7 @@
     git checkout v2017.1.4 (gewünschten Tag setzen)
     
     # Get the Freifunk Radevormwald site repository
-    git clone https://github.com/freifunk-radevormwald/site.git site
+    git clone https://github.com/freifunk-radevormwald/ffrade-site.git ffrade-site
     
     # Get other repositories used by Gluon
     make update
@@ -17,7 +17,7 @@
     make -j4 GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable       (für Geräte mit nur 4 MB Flash) 
     make -j4 GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable   (für tp-link-tl-wdr4900-v1 Geräte)
     
-    # Im Fehlerfall Build Gluon mit -j1 V=s wiederholden um geneue Infos zum Fehler zu erhalten
+    # Im Fehlerfall Build Gluon mit -j1 V=s wiederholden, um Fehlerinfos zu erhalten
     make -j1 V=s GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
     ... 
     
