@@ -21,7 +21,7 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-+GLUON_SITE_FEEDS='packages'
-+PACKAGES_PACKAGES_REPO=https://github.com/freifunk-radevormwald/eulenfunk-packages.git
-+PACKAGES_PACKAGES_COMMIT=47f21034fc659ca29bd18d38c8b78fc3d10a73a5
-+PACKAGES_PACKAGES_BRANCH=lede
+GLUON_SITE_FEEDS='ffrade_packages'
+PACKAGES_FFRADE_PACKAGES_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
+PACKAGES_FFRADE_PACKAGES_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
+PACKAGES_FFRADE_PACKAGES_BRANCH=master
