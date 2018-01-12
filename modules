@@ -21,7 +21,7 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-GLUON_SITE_FEEDS='packages'
-PACKAGES_PACKAGES_REPO=https://github.com/freifunk-radevormwald/packages.git
-PACKAGES_PACKAGES_COMMIT=e3dc15822ca5c8f033cd7972e1a673f479b404f7
-PACKAGES_PACKAGES_BRANCH=lede
+GLUON_SITE_FEEDS='ffrade-packages'
+PACKAGES_PACKAGES_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
+PACKAGES_PACKAGES_COMMIT=/missing/
+PACKAGES_PACKAGES_BRANCH=master
