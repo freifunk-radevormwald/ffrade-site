@@ -23,5 +23,5 @@
 
 GLUON_SITE_FEEDS='ffrade-packages'
 PACKAGES_PACKAGES_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
-PACKAGES_PACKAGES_COMMIT=/missing/
+PACKAGES_PACKAGES_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
 PACKAGES_PACKAGES_BRANCH=master
