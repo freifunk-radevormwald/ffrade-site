@@ -5,7 +5,7 @@
 
 GLUON_SITE_PACKAGES := \
     gluon-respondd \
-    respondd-module-airtime \
+    ffffm-additional-wifi-json-info \
     gluon-autoupdater \
     gluon-config-mode-autoupdater \
     gluon-config-mode-contact-info \
