@@ -13,7 +13,7 @@
     make update
     
     # Build Gluon
-    make -j4 GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
+    make -j4 GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable BROKEN=0
     make -j4 GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable       (für Geräte mit nur 4 MB Flash) 
     make -j4 GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable   (für tp-link-tl-wdr4900-v1 Geräte)
     
