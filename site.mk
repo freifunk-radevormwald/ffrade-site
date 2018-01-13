@@ -139,7 +139,6 @@ ifeq ($(GLUON_TARGET),x86-geode)
 # and add a few common USB NICs
 GLUON_SITE_PACKAGES += \
         kmod-usb-hid \
-#        $(USB_PACKAGES_BASIC) \
         $(USB_PACKAGES_STORAGE) \
         $(USB_PACKAGES_NET) \
         $(TOOLS_PACKAGES)
