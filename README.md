@@ -27,23 +27,18 @@
     # Manifestdatei signieren
     contrib/sign.sh /home/stefan/secret-steneu-ff-sig.key /home/stefan/gluon-rdv/output/images/sysupgrade/stable.manifest
     
-# Validation
-
-You can validate your changes to this repository by calling the validate_site.sh file with
-
-    tests/validate_site.sh
 
 # Dokumentation
 
-https://gluon.readthedocs.org/en/latest/releases/v2016.2.7.html
+https://gluon.readthedocs.org/en/latest/releases/v2017.1.3.html
 
-Gluon Version auf der die Freifunk Nord Firmware basiert:
+Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* 2016.2.7 - Gluon 2016.2.7
+* 2017.1.3 - Gluon 2017.1.3
 
 # Download der Firmware
 
-* https://nord.freifunk.net/firmware.html
+* http://firmware.freifunk-radevormwald.de/
 
 # Firmware selber bauen
 
@@ -55,13 +50,17 @@ Gluon Version auf der die Freifunk Nord Firmware basiert:
 
   1.2 Gluon repo clonen
 
-       cd /opt/
-       git clone https://github.com/freifunk-gluon/gluon
+       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2017.1.x
+       
+  1.3 Gwünschtes Tag setzen
+       
+       git branch -a 
+       git checkout v2017.1.4
+       
+  1.4 Freifunk Radevormwald Site clonen
 
-  1.3 Freifunk Nord Site clonen
-
-       cd gluon
-       git clone -b master https://github.com/ffnord/nord-site.git site
+       cd gluon-rdv
+       git clone https://github.com/freifunk-radevormwald/ffrade-site.git site -b master
 
 2. Firmware bauen
 
@@ -69,16 +68,25 @@ Gluon Version auf der die Freifunk Nord Firmware basiert:
 
        make update
 
-  2.2 Build durchführen
-
-       make -j8 GLUON_TARGET=ar71xx-generic ##-j $ZAHL$ = Anzahl der CPU Kerne
-
+  
+  2.2 Anzahl CPU Kerne X ermitteln
+  
+      X=$(expr $(nproc) + 1)
+    
+  2.3 Build durchführen
+  
+       make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
+       && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable        
+       && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
+       
+            
        ## Mögliche Targets
 
        - ar71xx-generic
+       - ar71xx-tiny        (für Geräte mit nur 4 MB Flash)
        - ar71xx-mikrotik
        - ar71xx-nand
-       - mpc85xx-generic
+       - mpc85xx-generic    (für tp-link-tl-wdr4900-v1 Geräte)
        - x86-64
        - x86-generic
        - x86-kvm_guest
@@ -89,12 +97,16 @@ Gluon Version auf der die Freifunk Nord Firmware basiert:
        - ramips-rt305x
        - sunxi
        - mvebu
-
+       
+  2.4 Wer das Kompilieren fehlschlägt
+  
+       make -j1 V=s GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
+       
 3. Rebuild
 
   3.1 Updaten
 
-       cd /opt/gluon/site
+       cd site
        git pull
        cd ..
        git pull
@@ -102,4 +114,16 @@ Gluon Version auf der die Freifunk Nord Firmware basiert:
 
   3.2 Build Verzeichnis säubern
 
-       make clean GLUON_TARGET=$TARGET
+       make clean GLUON_TARGET=ar71xx-generic
+
+4. Firmware signieren
+
+  4.1 Manifestdatei erstellen
+  
+      make manifest GLUON_BRANCH=stable
+      
+  4.2 Manifestdatei signieren
+  
+      .contrib/sign.sh /home/stefan/secret-steneu-ff-sig.key /home/stefan/gluon-rdv/output/images/sysupgrade/stable.manifest
+      
+      
