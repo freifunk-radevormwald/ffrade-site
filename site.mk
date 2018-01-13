@@ -31,7 +31,7 @@ GLUON_PRIORITY ?= 0
 ##
 
 GLUON_SITE_PACKAGES := \
-gluon-respondd \
+	gluon-respondd \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
@@ -50,53 +50,24 @@ gluon-respondd \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
-	gluon-aptimeclock \
 	gluon-authorized-keys \
 	haveged \
 	iwinfo	
 
-# add offline ssid only if the target has wifi device
-ifeq ($(GLUON_TARGET),ar71xx-generic)
+# from eulenfunk-packages
 GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \
 	gluon-ssid-changer \
-	ffffm-button-bind
-endif
+	gluon-aptimeclock
 
-ifeq ($(GLUON_TARGET),ar71xx-tiny)
+# from ffm-packages
 GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \
-	gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-nand)
-GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \
-	gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
-GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \
-	gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
-GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \
-	gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),mpc85xx-generic)
-GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \
-	gluon-ssid-changer
-endif
+	ffffm-additional-wifi-json-info 
+#	ffffm-button-bind
 
 # support the USB stack
-USB_PACKAGES_BASIC := \
-        kmod-usb-core \
-        kmod-usb2
+# USB_PACKAGES_BASIC := \
+#       kmod-usb-core \
+#	kmod-usb2
 
 # FAT32 Support for USB
 USB_PACKAGES_STORAGE := \
@@ -168,7 +139,7 @@ ifeq ($(GLUON_TARGET),x86-geode)
 # and add a few common USB NICs
 GLUON_SITE_PACKAGES += \
         kmod-usb-hid \
-        $(USB_PACKAGES_BASIC) \
+#        $(USB_PACKAGES_BASIC) \
         $(USB_PACKAGES_STORAGE) \
         $(USB_PACKAGES_NET) \
         $(TOOLS_PACKAGES)
@@ -186,27 +157,26 @@ GLUON_SITE_PACKAGES += \
 endif
 
 ##wifi-button pacakge only on some ar71-models ############################
-	GLUON_tp-link-tl-wr740n-nd-v1_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr740n-nd-v2_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr740n-nd-v3_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr740n-nd-v4_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr740n-nd-v5_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr741n-nd-v1_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr741n-nd-v2_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr741n-nd-v3_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr741n-nd-v4_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr741n-nd-v5_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr841n-nd-v8_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr841n-nd-v9_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr841n-nd-v10_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr841n-nd-v11_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr841n-nd-v12_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr842n-nd-v1_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr842n-nd-v2_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr842n-nd-v3_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr1043n-nd-v1_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr1043n-nd-v2_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr1043n-nd-v3_SITE_PACKAGES := ffffm-button-bind
-	GLUON_tp-link-tl-wr1043n-nd-v4_SITE_PACKAGES := ffffm-button-bind
-	
+#	GLUON_tp-link-tl-wr740n-nd-v1_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr740n-nd-v2_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr740n-nd-v3_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr740n-nd-v4_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr740n-nd-v5_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr741n-nd-v1_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr741n-nd-v2_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr741n-nd-v3_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr741n-nd-v4_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr741n-nd-v5_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr841n-nd-v8_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr841n-nd-v9_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr841n-nd-v10_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr841n-nd-v11_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr841n-nd-v12_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr842n-nd-v1_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr842n-nd-v2_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr842n-nd-v3_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr1043n-nd-v1_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr1043n-nd-v2_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr1043n-nd-v3_SITE_PACKAGES := ffffm-button-bind
+#	GLUON_tp-link-tl-wr1043n-nd-v4_SITE_PACKAGES := ffffm-button-bind
 ###########################################################################
