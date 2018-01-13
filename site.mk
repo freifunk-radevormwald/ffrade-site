@@ -66,7 +66,7 @@ endif
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info \
-	gluon-ssid-changer \
+	gluon-ssid-changer
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
