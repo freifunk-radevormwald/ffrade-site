@@ -62,7 +62,7 @@ GLUON_SITE_PACKAGES += \
 # from ffm-packages
 GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info 
-#	ffffm-button-bind
+	ffffm-button-bind
 
 # support the USB stack
 # USB_PACKAGES_BASIC := \
