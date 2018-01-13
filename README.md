@@ -1,6 +1,6 @@
 # Dokumentation
 
-https://gluon.readthedocs.org/en/latest/releases/v2017.1.4.html
+https://gluon.readthedocs.io/en/v2017.1.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
@@ -41,18 +41,16 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   
   2.2 Anzahl CPU Kerne X ermitteln
   
-      X=$(expr $(nproc) + 1)
+       X=$(expr $(nproc) + 1)
     
-  2.3 Build durchführen
+  2.3 Build durchführen für die in RAdevormwald gänigen Geräte
   
-       make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
-       && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable        
-       && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
+       X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
        
             
        ## Mögliche Targets
 
-       - ar71xx-generic
+       - ar71xx-generic     (für standard Geräte)
        - ar71xx-tiny        (für Geräte mit nur 4 MB Flash)
        - ar71xx-mikrotik
        - ar71xx-nand
