@@ -61,13 +61,13 @@ GLUON_SITE_PACKAGES += \
 
 # from ffm-packages
 GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info \ 
-	ffffm-button-bind
+	ffffm-additional-wifi-json-info
+#	ffffm-button-bind
 
 # support the USB stack
-# USB_PACKAGES_BASIC := \
-#       kmod-usb-core \
-#	kmod-usb2
+USB_PACKAGES_BASIC := \
+	kmod-usb-core \
+	kmod-usb2
 
 # FAT32 Support for USB
 USB_PACKAGES_STORAGE := \
