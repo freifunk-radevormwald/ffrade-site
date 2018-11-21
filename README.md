@@ -16,20 +16,21 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
   1.1 Abhängigkeiten installieren
 
-       sudo apt-get install git subversion build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-de
+       sudo apt-get install git subversion build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev python
 
   1.2 Gluon repo clonen
 
        git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2017.1.x
        
+       
   1.3 Gwünschtes Tag setzen
        
+       cd gluon-rdv
        git branch -a 
        git checkout v2017.1.4
        
   1.4 Freifunk Radevormwald Site clonen
 
-       cd gluon-rdv
        git clone https://github.com/freifunk-radevormwald/ffrade-site.git site -b master
 
 2. Firmware bauen
@@ -43,7 +44,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   
        X=$(expr $(nproc) + 1)
     
-  2.3 Build durchführen für die in RAdevormwald gänigen Geräte
+  2.3 Build durchführen für die in Radevormwald gänigen Geräte
   
        X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
        
