@@ -57,8 +57,12 @@ GLUON_SITE_PACKAGES := \
 
 # from eulenfunk-packages
 GLUON_SITE_PACKAGES += \
-	gluon-ssid-changer \
+#	gluon-ssid-changer \
 	gluon-aptimeclock
+	
+# from FF-Nord
+GLUON_SITE_PACKAGES += \
+	gluon-ssid-changer
 
 # from ffm-packages
 GLUON_SITE_PACKAGES += \
