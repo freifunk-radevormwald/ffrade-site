@@ -30,27 +30,29 @@ GLUON_LANGS ?= de
 GLUON_PRIORITY ?= 0
 ##
 
+##	GLUON_FEATURES
+#		Specify Gluon features/packages to enable;
+#		Gluon will automatically enable a set of packages
+#		depending on the combination of features listed
+
+GLUON_FEATURES := \
+	autoupdater \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	ebtables-limit-arp \
+	mesh-batman-adv-15 \
+	mesh-vpn-fastd \
+	radvd \
+	radv-filtered
+	respondd \
+	status-page \
+	web-advanced \
+	web-wizard
+
+
 GLUON_SITE_PACKAGES := \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-web-admin \
-	gluon-web-autoupdater \
-	gluon-web-network \
-	gluon-web-wifi-config \
-	gluon-mesh-batman-adv-15 \
-	gluon-mesh-vpn-fastd \
-	gluon-radvd \
-	gluon-setup-mode \
-	gluon-status-page \
-	gluon-authorized-keys \
+	gluon-status-page \		--Ist standartmäßig noch kein Feature
+	gluon-authorized-keys \	--Wird benötigt um SSH Keys auf den Nodes zu hinterlegen
 	haveged \
 	iwinfo	
 
