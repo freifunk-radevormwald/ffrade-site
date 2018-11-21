@@ -24,7 +24,7 @@
 GLUON_SITE_FEEDS='eulenfunk ffm'
 
 PACKAGES_EULENFUNK_REPO=https://github.com/eulenfunk/packages.git
-PACKAGES_EULENFUNK_COMMIT=f68cbd15bfabd713b632fe4db81ea4a4c9e15dd5
+PACKAGES_EULENFUNK_COMMIT=883031462c9e151baf7af650a782e80043ecdd7d
 PACKAGES_EULENFUNK_BRANCH=v2018.1.x
 
 PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
