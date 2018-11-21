@@ -43,7 +43,7 @@ GLUON_FEATURES := \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	radvd \
-	radv-filtered
+	radv-filtered \
 	respondd \
 	status-page \
 	web-advanced \
