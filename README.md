@@ -96,7 +96,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
       contrib/sign.sh /home/stefan/secret-steneu-ff-sig.key /home/stefan/gluon-rdv/output/images/sysupgrade/stable.manifest
       
       
-5. Weitere Infos und DAnk an
+5. Weitere Infos und Dank an
 
    5.1 Freifunk Stuttgart - Firmware Signieren
    
