@@ -1,10 +1,10 @@
 # Dokumentation
 
-https://gluon.readthedocs.io/en/v2017.1.x/
+https://gluon.readthedocs.io/en/v2018.1.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* 2017.1.x - Gluon 2017.1.4
+* Gluon 2018.1.X
 
 # Download der Firmware
 
@@ -20,14 +20,14 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
   1.2 Gluon repo clonen
 
-       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2017.1.x
+       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2018.1.x
        
        
   1.3 Gwünschtes Tag setzen
        
        cd gluon-rdv
        git branch -a 
-       git checkout v2017.1.4
+       git checkout v2018.1.4
        
   1.4 Freifunk Radevormwald Site clonen
 
