@@ -51,8 +51,8 @@ GLUON_FEATURES := \
 
 
 GLUON_SITE_PACKAGES := \
-	gluon-status-page \		--Ist standartmäßig noch kein Feature
-	gluon-authorized-keys \	--Wird benötigt um SSH Keys auf den Nodes zu hinterlegen
+	gluon-status-page \		#Ist standartmäßig noch kein Feature
+	gluon-authorized-keys \	#Wird benötigt um SSH Keys auf den Nodes zu hinterlegen
 	haveged \
 	iwinfo	
 
