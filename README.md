@@ -105,3 +105,4 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
    
        https://wiki.freifunk.net/Freifunk_Nord/Firmware_selbst_kompilieren
        
+       
