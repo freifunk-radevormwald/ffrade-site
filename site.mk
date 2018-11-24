@@ -5,7 +5,7 @@
 #               gluon relies on
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
-DEFAULT_GLUON_RELEASE := 0.8.2-rdv-$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.9.0-rdv-$(shell date '+%Y%m%d')
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
@@ -30,25 +30,26 @@ GLUON_LANGS ?= de
 GLUON_PRIORITY ?= 0
 ##
 
+##	GLUON_FEATURES
+#		Specify Gluon features/packages to enable;
+#		Gluon will automatically enable a set of packages
+#		depending on the combination of features listed
+
+GLUON_FEATURES := \
+	autoupdater \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	ebtables-limit-arp \
+	mesh-batman-adv-15 \
+	mesh-vpn-fastd \
+	radvd \
+	respondd \
+	status-page \
+	web-advanced \
+	web-wizard
+
+
 GLUON_SITE_PACKAGES := \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-web-admin \
-	gluon-web-autoupdater \
-	gluon-web-network \
-	gluon-web-wifi-config \
-	gluon-mesh-batman-adv-15 \
-	gluon-mesh-vpn-fastd \
-	gluon-radvd \
-	gluon-setup-mode \
 	gluon-status-page \
 	gluon-authorized-keys \
 	haveged \
@@ -56,8 +57,12 @@ GLUON_SITE_PACKAGES := \
 
 # from eulenfunk-packages
 GLUON_SITE_PACKAGES += \
-	gluon-ssid-changer \
+#	gluon-ssid-changer \
 	gluon-aptimeclock
+	
+# from FF-Nord
+GLUON_SITE_PACKAGES += \
+	gluon-ssid-changer
 
 # from ffm-packages
 GLUON_SITE_PACKAGES += \

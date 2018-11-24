@@ -1,10 +1,10 @@
 # Dokumentation
 
-https://gluon.readthedocs.io/en/v2017.1.x/
+https://gluon.readthedocs.io/en/v2018.1.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* 2017.1.x - Gluon 2017.1.4
+* Gluon 2018.1.x
 
 # Download der Firmware
 
@@ -16,20 +16,21 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
   1.1 Abhängigkeiten installieren
 
-       sudo apt-get install git subversion build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-de
+       sudo apt-get install git subversion build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev python
 
   1.2 Gluon repo clonen
 
-       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2017.1.x
+       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2018.1.x
+       
        
   1.3 Gwünschtes Tag setzen
        
+       cd gluon-rdv
        git branch -a 
-       git checkout v2017.1.4
+       git checkout v2018.1.x
        
   1.4 Freifunk Radevormwald Site clonen
 
-       cd gluon-rdv
        git clone https://github.com/freifunk-radevormwald/ffrade-site.git site -b master
 
 2. Firmware bauen
@@ -43,7 +44,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   
        X=$(expr $(nproc) + 1)
     
-  2.3 Build durchführen für die in RAdevormwald gänigen Geräte
+  2.3 Build durchführen für die in Radevormwald gänigen Geräte
   
        X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
        
@@ -95,7 +96,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
       contrib/sign.sh /home/stefan/secret-steneu-ff-sig.key /home/stefan/gluon-rdv/output/images/sysupgrade/stable.manifest
       
       
-5. Weitere Infos und DAnk an
+5. Weitere Infos und Dank an
 
    5.1 Freifunk Stuttgart - Firmware Signieren
    
@@ -104,5 +105,4 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
    5.2 Freifunk Nord - Firmware selbst kompilieren
    
        https://wiki.freifunk.net/Freifunk_Nord/Firmware_selbst_kompilieren
-       
        
