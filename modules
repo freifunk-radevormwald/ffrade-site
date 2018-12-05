@@ -34,7 +34,6 @@ PACKAGES_FFN_BRANCH=2018.1.x
 PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
 PACKAGES_FFM_COMMIT=c2339d2f80a7389c455c9ebd0ea126c43b272747
 PACKAGES_FFM_BRANCH=master
-PACKAGES_FFM_BRANCH=master
 
 # GLUON_SITE_FEEDS='ffrade'
 #
