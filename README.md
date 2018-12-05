@@ -51,21 +51,21 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
             
        ## Mögliche Targets
 
-       - ar71xx-generic     (für standard Geräte)
-       - ar71xx-tiny        (für Geräte mit nur 4 MB Flash)
-       - ar71xx-mikrotik
-       - ar71xx-nand
-       - mpc85xx-generic    (für tp-link-tl-wdr4900-v1 Geräte)
-       - x86-64
-       - x86-generic
-       - x86-kvm_guest
-       - x86-xen_domu
-       - brcm2708-bcm2708
-       - brcm2708-bcm2709
-       - ramips-mt7621
-       - ramips-rt305x
-       - sunxi
-       - mvebu
+		-ar71xx-generic		(für standard Geräte)
+		-ar71xx-tiny		(für Geräte mit nur 4 MB Flash)
+		-ar71xx-nand
+		-brcm2708-bcm2708
+		-brcm2708-bcm2709
+		-mpc85xx-generic	(für tp-link-tl-wdr4900-v1 Geräte)
+		-ramips-mt7621
+		-sunxi
+		-x86-generic
+		-x86-geode
+		-x86-64
+		-ramips-mt7620
+		-ramips-mt7628
+		-ramips-rt305x
+
        
   2.4 Wenn das Kompilieren fehlschlägt
   
