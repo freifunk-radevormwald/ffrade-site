@@ -21,19 +21,12 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-GLUON_SITE_FEEDS='eulenfunk ffn ffm'
-
-PACKAGES_EULENFUNK_REPO=https://github.com/freifunk-radevormwald/packages.git
-PACKAGES_EULENFUNK_COMMIT=883031462c9e151baf7af650a782e80043ecdd7d
-PACKAGES_EULENFUNK_BRANCH=v2018.1.x
+GLUON_SITE_FEEDS='ffn'
 
 PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
 PACKAGES_FFN_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2
 PACKAGES_FFN_BRANCH=2018.1.x
 
-PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
-PACKAGES_FFM_COMMIT=31cd7c27e81b0e8d0b403836ff9734a1e5a6fb09
-PACKAGES_FFM_BRANCH=master
 
 # GLUON_SITE_FEEDS='ffrade'
 #

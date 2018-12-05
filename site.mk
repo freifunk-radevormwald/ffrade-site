@@ -54,20 +54,10 @@ GLUON_SITE_PACKAGES := \
 	gluon-authorized-keys \
 	haveged \
 	iwinfo	
-
-# from eulenfunk-packages
-GLUON_SITE_PACKAGES += \
-#	gluon-ssid-changer \
-	gluon-aptimeclock
 	
 # from FF-Nord
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
-
-# from ffm-packages
-GLUON_SITE_PACKAGES += \
-	ffffm-additional-wifi-json-info
-#	ffffm-button-bind
 
 # support the USB stack
 USB_PACKAGES_BASIC := \
