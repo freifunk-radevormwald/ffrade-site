@@ -58,6 +58,10 @@ GLUON_SITE_PACKAGES := \
 # from FF-Nord
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
+	
+# from eulenfunk
+GLUON_SITE_PACKAGES += \
+	gluon-aptimeclock	
 
 # support the USB stack
 USB_PACKAGES_BASIC := \
