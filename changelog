@@ -1,5 +1,14 @@
 ####Firmware Historie der Radevormwalder Freifunk Firmware
 
+####gluon-ffrade-2018.1.3-rdv-X
+Gluon 2018.1.3
+Wechsel der Firmwarebezeichnung. Es wird jetzt die genutzte Gluon Versin vorangestellt.
+ssid-changer kommt jetzt von Freifunk Nord (https://github.com/freifunk-radevormwald/gluon-ssid-changer.git; Branch: 2018.1.x)
+aptimeclock von Eulenfunk angepasst (https://github.com/freifunk-radevormwald/packages.git; Branch: v2018.1.x)
+?? Airtime Modul zugefügt ?? (in Planung)
+?? weitere Radeserver (radeX-radeX) integriert ?? (in Planung)
+Unterstützung neuer Routermodelle (FRITZ!Box 4020, CPE210 v2, TP-Link Archer C7 v4, Ubiquiti UniFi AC Mesh, u.a.)
+
 #####gluon-ffrade-0.8.1-rdv-20180108
 Gluon 2017.1.4
 Wechsel von OpenWrt zu LEDE
