@@ -60,7 +60,11 @@ GLUON_SITE_PACKAGES := \
 # from FF-Nord
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
-	
+
+# from Freifunk-ffm
+GLUON_SITE_PACKAGES += \
+ffffm-additional-wifi-json-info
+
 # from eulenfunk
 GLUON_SITE_PACKAGES += \
 	gluon-aptimeclock	
