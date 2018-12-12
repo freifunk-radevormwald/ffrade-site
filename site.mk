@@ -40,7 +40,6 @@ GLUON_FEATURES := \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	ebtables-limit-arp \
-	ebtables-limit-arp
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	radvd \
@@ -58,7 +57,7 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo	
 	
-# from FF-Nord
+# from https://github.com/Freifunk-Nord/gluon-ssid-changer:
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
 
