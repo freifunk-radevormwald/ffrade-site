@@ -21,20 +21,19 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-GLUON_SITE_FEEDS="ssidchanger eulenfunk"
+GLUON_SITE_FEEDS='ffn eulenfunk ffm'
 
-PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-nord/gluon-ssid-changer.git
-PACKAGES_SSIDCHANGER_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2 # <-- set the newest commit ID here
-PACKAGES_SSIDCHANGER_BRANCH=2018.1.x
+# gluon-ssid-changer von Freifunk-Nord
+PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
+PACKAGES_FFN_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2
+PACKAGES_FFN_BRANCH=2018.1.x
 
-#GLUON_SITE_FEEDS='eulenfunk'
-
+# gluon-aptimeclock von eulenfunk
 PACKAGES_EULENFUNK_REPO=https://github.com/steneu/eulenfunk-packages.git
 PACKAGES_EULENFUNK_COMMIT=883031462c9e151baf7af650a782e80043ecdd7d
 PACKAGES_EULENFUNK_BRANCH=v2018.1.x
 
-# GLUON_SITE_FEEDS='ffrade'
-#
-# PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
-# PACKAGES_FFRADE_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
-# PACKAGES_FFRADE_BRANCH=master
+# ffffm-additional-wifi-json-info von freifunk-ffm
+PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
+PACKAGES_FFM_COMMIT=b400a193a3e44f110216a879eb1ce6bed12eb3a8
+PACKAGES_FFM_BRANCH=master
