@@ -40,12 +40,12 @@ GLUON_FEATURES := \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	ebtables-limit-arp \
+	ebtables-limit-arp
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	radvd \
 #	radv-filterd \
 	respondd \
-	respondd-module-airtime \
 	status-page \
 	web-advanced \
 	web-wizard
@@ -54,6 +54,7 @@ GLUON_FEATURES := \
 GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	gluon-authorized-keys \
+	respondd-module-airtime \
 	haveged \
 	iwinfo	
 	
