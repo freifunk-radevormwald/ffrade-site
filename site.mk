@@ -43,12 +43,10 @@ GLUON_FEATURES := \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	radvd \
-#	radv-filterd \
 	respondd \
 	status-page \
 	web-advanced \
 	web-wizard
-
 
 GLUON_SITE_PACKAGES := \
 	gluon-status-page \
