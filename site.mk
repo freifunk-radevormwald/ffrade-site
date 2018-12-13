@@ -51,6 +51,8 @@ GLUON_FEATURES := \
 GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	gluon-authorized-keys \
+	gluon-web-admin \
+	gluon-web-logging \
 	respondd-module-airtime \
 	haveged \
 	iwinfo	
