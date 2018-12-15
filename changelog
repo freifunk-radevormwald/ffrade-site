@@ -4,6 +4,7 @@
 Gluon 2018.1.3
 *Wechsel auf 802.11s Mesh. Ad-Hoc (IBSS) deaktiviert
 vx mesh lan aktiviert (ACHTUNG: Update Reihenfolge bei mesh lan Knoten beahten)
+Airtime Modul (ffffm-additional-wifi-json-info) entfernt, da in 2018.x nicht mehr unterstützt
 ssid-changer kommt jetzt von Freifunk Nord (https://github.com/freifunk-radevormwald/gluon-ssid-changer.git; Branch: 2018.1.x)
 aptimeclock von Eulenfunk angepasst (https://github.com/freifunk-radevormwald/packages.git; Branch: v2018.1.x)
 WLAN Knopf standardmäßig deaktiveirt
