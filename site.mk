@@ -51,7 +51,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	gluon-authorized-keys \
 	gluon-web-admin \
-	respondd-module-airtime \
+	gluon-web-network \
+#	respondd-module-airtime \
 	haveged \
 	iwinfo	
 	
@@ -60,8 +61,8 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
 
 # from Freifunk-ffm
-GLUON_SITE_PACKAGES += \
-ffffm-additional-wifi-json-info
+#GLUON_SITE_PACKAGES += \
+#ffffm-additional-wifi-json-info
 
 # from eulenfunk
 GLUON_SITE_PACKAGES += \
@@ -158,6 +159,7 @@ GLUON_SITE_PACKAGES += \
         $(TOOLS_PACKAGES)
 endif
 
+# from Freifunk-ffm
 ##wifi-button pacakge only on some ar71-models ############################
 	GLUON_tp-link-tl-wr740n-nd-v1_SITE_PACKAGES := ffffm-button-bind
 	GLUON_tp-link-tl-wr740n-nd-v2_SITE_PACKAGES := ffffm-button-bind
