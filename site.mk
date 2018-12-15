@@ -57,13 +57,13 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo	
 	
-# from https://github.com/Freifunk-Nord/gluon-ssid-changer:
+# from FF-Nord (https://github.com/Freifunk-Nord/gluon-ssid-changer)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
 
 # from Freifunk-ffm
-GLUON_SITE_PACKAGES += \
-ffffm-additional-wifi-json-info
+# GLUON_SITE_PACKAGES += \
+# ffffm-additional-wifi-json-info
 
 # from eulenfunk
 GLUON_SITE_PACKAGES += \
