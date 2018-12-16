@@ -1,4 +1,14 @@
-####Firmware Historie der Radevormwalder Freifunk Firmware
+####Historie der Radevormwalder Freifunk Firmware
+
+####gluon-ffrade-2017.1.8-rdv-0
+Gluon 2017.1.8
+Wartungsupdate zur Vorbereitung auf Gluon 2018.x Firmware
+Wechsel der Firmwarebezeichnung. Es wird jetzt der genutzte Gluon Tag vorangestellt.
+802.11s Mesh zusätzlich aktiviert
+ACHTUNG: Vor Update "uci set gluon-core.@wireless[0].preserve_channels='1'" bei abweichendem Kanal ausführen. 
+mesh-vpn option "ohne Verschlüsselung" zugefügt
+Fehler in der NTP Config korregiert. Knoten im mesh bekommen jetz eine korrekte Zeit.
+Unterstützung neuer Routermodelle (TP-Link Archer C7 v4, Ubiquiti UniFi AC Mesh, u.a.)
 
 #####gluon-ffrade-0.8.1-rdv-20180108
 Gluon 2017.1.4
