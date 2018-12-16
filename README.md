@@ -30,7 +30,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
        
   1.4 Freifunk Radevormwald Site clonen
 
-       git clone https://github.com/freifunk-radevormwald/ffrade-site.git site -b master
+       git clone https://github.com/freifunk-radevormwald/ffrade-site.git site -b v2017.1.x
 
 2. Firmware bauen
 
