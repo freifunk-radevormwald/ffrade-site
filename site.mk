@@ -5,7 +5,7 @@
 #               gluon relies on
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
-DEFAULT_GLUON_RELEASE := 0.8.2-rdv-$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2017.1.8-rdv-0
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
