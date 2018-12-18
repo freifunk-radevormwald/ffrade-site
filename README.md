@@ -54,6 +54,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 		-ar71xx-generic		(für standard Geräte)
 		-ar71xx-tiny		(für Geräte mit nur 4 MB Flash)
 		-ar71xx-nand
+		-ipq40xx		(u. a. für AVM)
 		-brcm2708-bcm2708
 		-brcm2708-bcm2709
 		-mpc85xx-generic	(für tp-link-tl-wdr4900-v1 Geräte)
