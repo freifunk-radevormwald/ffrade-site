@@ -46,7 +46,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
     
   2.3 Build durchführen für die in Radevormwald gänigen Geräte
   
-       X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
+       X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-64 GLUON_BRANCH=stable
        
             
        ## Mögliche Targets
