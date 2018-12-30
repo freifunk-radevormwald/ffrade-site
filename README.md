@@ -27,11 +27,11 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
        
        cd gluon-rdv
        git branch -a 
-       git checkout v2018.1.3
+       git checkout v2018.1.4
        
   1.4 Freifunk Radevormwald Site clonen
 
-       git clone https://github.com/steneu/ffrade-site.git site -b master
+       git clone https://github.com/steneu/ffrade-site.git site -b v2018.1.x
 
 2. Firmware bauen
 
@@ -54,11 +54,11 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 		-ar71xx-generic		(für standard Geräte)
 		-ar71xx-tiny		(für Geräte mit nur 4 MB Flash)
 		-ar71xx-nand
-		-ipq40xx		(u. a. für AVM)
+		-ipq40xx		
 		-brcm2708-bcm2708
 		-brcm2708-bcm2709
 		-mpc85xx-generic	(für tp-link-tl-wdr4900-v1 Geräte)
-		-ramips-mt7621
+		-ramips-mt7621		(für Ubiquiti EdgeRouter X)
 		-sunxi
 		-x86-generic
 		-x86-geode
