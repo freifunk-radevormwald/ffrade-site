@@ -1,10 +1,10 @@
 # Dokumentation
 
-https://gluon.readthedocs.io/en/v2018.1.x/
+https://gluon.readthedocs.io/en/v2018.2.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* Gluon 2018.1.x
+* Gluon 2018.2.x
 
 # Download der Firmware
 
@@ -20,14 +20,14 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
   1.2 Gluon repo clonen
 
-       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2018.1.x
+       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2018.2.x
        
        
   1.3 Gwünschtes Tag setzen
        
        cd gluon-rdv
        git branch -a 
-       git checkout v2018.1.3
+       git checkout v2018.2.x
        
   1.4 Freifunk Radevormwald Site clonen
 
@@ -51,14 +51,14 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
             
        ## Mögliche Targets
 
-		-ar71xx-generic		(für standard Geräte)
+		-ar71xx-generic		(für standard Geräte incl. Fritz!WLAN Repeater 450E)
 		-ar71xx-tiny		(für Geräte mit nur 4 MB Flash)
 		-ar71xx-nand
-		-ipq40xx		(u. a. für AVM)
+		-ipq40xx		(für AVM FRITZ!Box 4040)
 		-brcm2708-bcm2708
 		-brcm2708-bcm2709
 		-mpc85xx-generic	(für tp-link-tl-wdr4900-v1 Geräte)
-		-ramips-mt7621
+		-ramips-mt7621		(für Ubiquiti EdgeRouter X)
 		-sunxi
 		-x86-generic
 		-x86-geode
