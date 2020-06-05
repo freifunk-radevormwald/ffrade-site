@@ -59,12 +59,12 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 		-brcm2708-bcm2709
 		-mpc85xx-generic	(für tp-link-tl-wdr4900-v1 Geräte)
 		-ramips-mt7621		(für Ubiquiti EdgeRouter X)
-		-sunxi
+		-sunxi-cortexa7
 		-x86-generic
 		-x86-geode
 		-x86-64
 		-ramips-mt7620
-		-ramips-mt7628
+		-ramips-mt76x8
 		-ramips-rt305x
 
        
