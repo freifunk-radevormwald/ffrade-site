@@ -5,7 +5,7 @@
 #               gluon relies on
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
-DEFAULT_GLUON_RELEASE := 2018.2.1-rdv-1
+DEFAULT_GLUON_RELEASE := 2020.1.3-rdv-1
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
 #               e.g.:
@@ -19,14 +19,20 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
 
-#required for ath10k devices like C5/C7
-GLUON_ATH10K_MESH ?= 11s
+# required for ath10k devices like C5/C7
+#GLUON_ATH10K_MESH ?= 11s
 
 # Languages to include; supported values: en de
 GLUON_LANGS ?= de
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
+
+GLUON_MULTIDOMAIN=0
+
+# build images for deprecated devices (e.g. ar71xx-tiny)
+GLUON_DEPRECATED ?= full
+
 ##
 
 ##	GLUON_FEATURES
