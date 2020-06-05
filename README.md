@@ -4,7 +4,8 @@ https://gluon.readthedocs.io/en/v2019.1.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* Gluon 2019.1.2
+* Gluon 2019.1.2 (config im Aufbau und noch nicht komplett)
+* Aktuelle Stable 2018.1.3 ist im Branch 2018.1.x zu finden
 
 # Download der Firmware
 
