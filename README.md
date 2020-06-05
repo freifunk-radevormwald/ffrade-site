@@ -15,20 +15,20 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
 1. Vorbereitung:
 
-  1.1 Abhängigkeiten installieren
-
-       sudo apt-get install git subversion build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev python
+  1.1 Abhängigkeiten installieren (Debian 10)
+	
+       sudo apt-get install git subversion python build-essential gawk unzip libncurses-dev libz-dev libssl-dev wget time
 
   1.2 Gluon repo clonen
 
-       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2018.2.x
+       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2020.1.x
        
        
   1.3 Gwünschtes Tag setzen
        
        cd gluon-rdv
        git branch -a 
-       git checkout v2018.2.x
+       git checkout v2020.1.3
        
   1.4 Freifunk Radevormwald Site clonen
 
