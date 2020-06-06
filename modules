@@ -32,12 +32,13 @@
 #PACKAGES_EULENFUNK_REPO=https://github.com/freifunk-radevormwald/eulenfunk-packages.git
 #PACKAGES_EULENFUNK_COMMIT=e0c501f8b2f6877a9ac11f8eebe834104da8f687
 #PACKAGES_EULENFUNK_BRANCH=v2018.1.x
-#
+
 ## radevormwald
-#PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
-#PACKAGES_FFRADE_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
-#PACKAGES_FFRADE_BRANCH=master
-#
+GLUON_SITE_FEEDS="ffrade"
+PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
+PACKAGES_FFRADE_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
+PACKAGES_FFRADE_BRANCH=master
+
 ## ffffm-additional-wifi-json-info von freifunk-ffm
 #PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
 #PACKAGES_FFM_COMMIT=1e1a3af97f401d21d7e08b80e196c86211dd6bc1
