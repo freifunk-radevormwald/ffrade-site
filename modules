@@ -29,8 +29,8 @@ PACKAGES_FFN_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2
 PACKAGES_FFN_BRANCH=2018.1.x
 
 # gluon-aptimeclock von eulenfunk
-PACKAGES_EULENFUNK_REPO=https://github.com/steneu/eulenfunk-packages.git
-PACKAGES_EULENFUNK_COMMIT=883031462c9e151baf7af650a782e80043ecdd7d
+PACKAGES_EULENFUNK_REPO=https://github.com/freifunk-radevormwald/eulenfunk-packages.git
+PACKAGES_EULENFUNK_COMMIT=e0c501f8b2f6877a9ac11f8eebe834104da8f687
 PACKAGES_EULENFUNK_BRANCH=v2018.1.x
 
 # ffffm-additional-wifi-json-info von freifunk-ffm
