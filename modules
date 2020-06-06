@@ -23,22 +23,22 @@
 
 GLUON_SITE_FEEDS='ffn eulenfunk ffrade ffm'
 
-# gluon-ssid-changer von Freifunk-Nord
-PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
-PACKAGES_FFN_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2
-PACKAGES_FFN_BRANCH=2018.1.x
-
-# eulenfunk
-PACKAGES_EULENFUNK_REPO=https://github.com/freifunk-radevormwald/eulenfunk-packages.git
-PACKAGES_EULENFUNK_COMMIT=e0c501f8b2f6877a9ac11f8eebe834104da8f687
-PACKAGES_EULENFUNK_BRANCH=v2018.1.x
-
-# radevormwald
-PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
-PACKAGES_FFRADE_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
-PACKAGES_FFRADE_BRANCH=master
-
-# ffffm-additional-wifi-json-info von freifunk-ffm
-PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
-PACKAGES_FFM_COMMIT=1e1a3af97f401d21d7e08b80e196c86211dd6bc1
-PACKAGES_FFM_BRANCH=master
+## gluon-ssid-changer von Freifunk-Nord
+#PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
+#PACKAGES_FFN_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2
+#PACKAGES_FFN_BRANCH=2018.1.x
+#
+## eulenfunk
+#PACKAGES_EULENFUNK_REPO=https://github.com/freifunk-radevormwald/eulenfunk-packages.git
+#PACKAGES_EULENFUNK_COMMIT=e0c501f8b2f6877a9ac11f8eebe834104da8f687
+#PACKAGES_EULENFUNK_BRANCH=v2018.1.x
+#
+## radevormwald
+#PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
+#PACKAGES_FFRADE_COMMIT=388b93e87330362b67e675ca5cd4862b3f3ac25f
+#PACKAGES_FFRADE_BRANCH=master
+#
+## ffffm-additional-wifi-json-info von freifunk-ffm
+#PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
+#PACKAGES_FFM_COMMIT=1e1a3af97f401d21d7e08b80e196c86211dd6bc1
+#PACKAGES_FFM_BRANCH=master
