@@ -21,7 +21,7 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-GLUON_SITE_FEEDS='ffn eulenfunk ffrade ffm'
+#GLUON_SITE_FEEDS='ffn eulenfunk ffrade ffm'
 
 ## gluon-ssid-changer von Freifunk-Nord
 #PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
