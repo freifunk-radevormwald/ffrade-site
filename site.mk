@@ -71,8 +71,11 @@ GLUON_SITE_PACKAGES += \
 
 # from eulenfunk
 GLUON_SITE_PACKAGES += \
-	gluon-aptimeclock \
 	respondd-module-airtime
+
+# from radevormwald
+GLUON_SITE_PACKAGES += \
+	gluon-aptimeclock
 
 # support the USB stack
 USB_PACKAGES_BASIC := \
