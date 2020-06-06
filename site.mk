@@ -26,7 +26,7 @@ GLUON_REGION ?= eu
 GLUON_LANGS ?= de
 
 # Default priority for updates.
-GLUON_PRIORITY ?= 0
+#GLUON_PRIORITY ?= 0
 
 GLUON_MULTIDOMAIN=0
 
