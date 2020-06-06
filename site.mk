@@ -70,8 +70,8 @@ GLUON_SITE_PACKAGES += \
 #ffffm-additional-wifi-json-info
 
 # from eulenfunk
-GLUON_SITE_PACKAGES += \
-	respondd-module-airtime
+#GLUON_SITE_PACKAGES += \
+#	respondd-module-airtime
 
 # from radevormwald
 GLUON_SITE_PACKAGES += \
