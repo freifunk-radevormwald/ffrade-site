@@ -61,22 +61,22 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo	
 	
-# from FF-Nord (https://github.com/Freifunk-Nord/gluon-ssid-changer)
-GLUON_SITE_PACKAGES += \
-	gluon-ssid-changer
-
-# from Freifunk-ffm
+## from FF-Nord (https://github.com/Freifunk-Nord/gluon-ssid-changer)
 #GLUON_SITE_PACKAGES += \
-#ffffm-additional-wifi-json-info
-
-# from eulenfunk
+#	gluon-ssid-changer
+#
+## from Freifunk-ffm
+##GLUON_SITE_PACKAGES += \
+##ffffm-additional-wifi-json-info
+#
+## from eulenfunk
+##GLUON_SITE_PACKAGES += \
+##	respondd-module-airtime
+#
+## from radevormwald
 #GLUON_SITE_PACKAGES += \
-#	respondd-module-airtime
-
-# from radevormwald
-GLUON_SITE_PACKAGES += \
-	gluon-aptimeclock
-
+#	gluon-aptimeclock
+#
 # support the USB stack
 USB_PACKAGES_BASIC := \
 	kmod-usb-core \
