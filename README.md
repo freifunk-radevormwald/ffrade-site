@@ -4,8 +4,7 @@ https://gluon.readthedocs.io/en/v2019.1.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* Gluon 2019.1.2 (config im Aufbau und noch nicht komplett)
-* Aktuelle Stable 2018.1.3 ist im Branch 2018.1.x zu finden
+* Gluon 2019.1.2
 
 # Download der Firmware
 
@@ -15,10 +14,10 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
 1. Vorbereitung:
 
-  1.1 Abhängigkeiten installieren (Debian 10)
-	
-       sudo apt-get install git subversion python build-essential gawk unzip libncurses-dev libz-dev libssl-dev wget time
+  1.1 Abhängigkeiten installieren (Debian 9.12 (Stretch)). Debian 10 funktioniert nicht?
 
+       sudo apt-get install git subversion python build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev wget time
+       
   1.2 Gluon repo clonen
   
   Die nachfolgenden Schritte werden als User im Homeverzeichnis durchgeführt!
