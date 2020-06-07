@@ -74,9 +74,13 @@ GLUON_SITE_PACKAGES := \
 ##	respondd-module-airtime
 
 # from radevormwald
+#GLUON_SITE_PACKAGES += \
+#	gluon-aptimeclock \
+#	gluon-ssid-changer
+	
+# from freifunk aachen
 GLUON_SITE_PACKAGES += \
-	gluon-aptimeclock \
-	gluon-ssid-changer
+	gluon-ssid-changer	
 
 # support the USB stack
 USB_PACKAGES_BASIC := \
