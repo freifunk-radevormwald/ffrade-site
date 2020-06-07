@@ -34,12 +34,18 @@
 #PACKAGES_EULENFUNK_BRANCH=v2018.1.x
 
 ## radevormwald
-GLUON_SITE_FEEDS="ffrade"
-PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
-PACKAGES_FFRADE_COMMIT=31acfbe8cf678bc6745226f4d29e4ab81f7c5a2b
-PACKAGES_FFRADE_BRANCH=v2019.1.x
+#GLUON_SITE_FEEDS="ffrade"
+#PACKAGES_FFRADE_REPO=https://github.com/freifunk-radevormwald/ffrade-packages.git
+#PACKAGES_FFRADE_COMMIT=31acfbe8cf678bc6745226f4d29e4ab81f7c5a2b
+#PACKAGES_FFRADE_BRANCH=v2019.1.x
 
 ## ffffm-additional-wifi-json-info von freifunk-ffm
 #PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
 #PACKAGES_FFM_COMMIT=1e1a3af97f401d21d7e08b80e196c86211dd6bc1
 #PACKAGES_FFM_BRANCH=master
+
+## freifunk aachen
+GLUON_SITE_FEEDS="ssidchanger"
+PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
+PACKAGES_SSIDCHANGER_COMMIT=f962ab17723be144849ff988909e3a794d612d56
+PACKAGES_SSIDCHANGER_BRANCH=2019.1.x
