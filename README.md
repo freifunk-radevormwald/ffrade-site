@@ -16,7 +16,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
   1.1 Abhängigkeiten installieren (Debian 9.12 (Stretch)). Debian 10 funktioniert nicht?
 
-       sudo apt-get install git subversion python build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev wget time
+       sudo apt-get install git subversion python build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev wget time ecdsautils
        
   1.2 Gluon repo clonen
   
@@ -94,7 +94,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   
       make manifest GLUON_BRANCH=stable
       
-  4.2 Manifestdatei signieren
+  4.2 Manifestdatei signieren (ecdsautils muss installiert sein)
   
       contrib/sign.sh /home/stefan/secret-steneu-ff-sig.key /home/stefan/gluon-rdv/output/images/sysupgrade/stable.manifest
       
