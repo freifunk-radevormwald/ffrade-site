@@ -68,10 +68,10 @@ GLUON_SITE_PACKAGES := \
 ## from Freifunk-ffm
 ##GLUON_SITE_PACKAGES += \
 ##ffffm-additional-wifi-json-info
-#
-## from eulenfunk
-##GLUON_SITE_PACKAGES += \
-##	respondd-module-airtime
+
+# from eulenfunk
+GLUON_SITE_PACKAGES += \
+	gluon-aptimeclock
 
 # from radevormwald
 #GLUON_SITE_PACKAGES += \
