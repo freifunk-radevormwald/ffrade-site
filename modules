@@ -21,17 +21,17 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-#GLUON_SITE_FEEDS='ffn eulenfunk ffrade ffm'
+GLUON_SITE_FEEDS='ssidchanger eulenfunk'
 
 ## gluon-ssid-changer von Freifunk-Nord
 #PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
 #PACKAGES_FFN_COMMIT=3c6750ce8fc9cedabfa8a6f479fb12d343c6ecc2
 #PACKAGES_FFN_BRANCH=2018.1.x
 #
-## eulenfunk
-#PACKAGES_EULENFUNK_REPO=https://github.com/freifunk-radevormwald/eulenfunk-packages.git
-#PACKAGES_EULENFUNK_COMMIT=e0c501f8b2f6877a9ac11f8eebe834104da8f687
-#PACKAGES_EULENFUNK_BRANCH=v2018.1.x
+# eulenfunk
+PACKAGES_EULENFUNK_REPO=https://github.com/steneu/eulenfunk-packages.git  # Testweise vom steneu git
+PACKAGES_EULENFUNK_COMMIT=fcab374c7bbf9354245c5b3e144905de313fcd8a
+PACKAGES_EULENFUNK_BRANCH=v2018.1.x
 
 ## radevormwald
 #GLUON_SITE_FEEDS="ffrade"
@@ -45,7 +45,7 @@
 #PACKAGES_FFM_BRANCH=master
 
 ## freifunk aachen
-GLUON_SITE_FEEDS="ssidchanger"
+#GLUON_SITE_FEEDS="ssidchanger"
 PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
 PACKAGES_SSIDCHANGER_COMMIT=f962ab17723be144849ff988909e3a794d612d56
 PACKAGES_SSIDCHANGER_BRANCH=2019.1.x
