@@ -92,7 +92,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
   4.1 Manifestdatei erstellen
   
-      make manifest GLUON_BRANCH=stable
+      make manifest GLUON_BRANCH=stable && make manifest GLUON_BRANCH=beta && make manifest GLUON_BRANCH=experimental
       
   4.2 Manifestdatei signieren (ecdsautils muss installiert sein)
   
