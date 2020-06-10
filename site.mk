@@ -42,6 +42,7 @@ GLUON_DEPRECATED ?= full
 
 GLUON_FEATURES := \
 	autoupdater \
+	config-mode-outdoor \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	mesh-batman-adv-15 \
@@ -53,7 +54,7 @@ GLUON_FEATURES := \
 	web-wizard
 
 GLUON_SITE_PACKAGES := \
-	gluon-status-page \
+#	gluon-status-page \
 	gluon-authorized-keys \
 	gluon-web-admin \
 	gluon-web-network \
