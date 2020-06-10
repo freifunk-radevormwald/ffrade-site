@@ -14,10 +14,15 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
 1. Vorbereitung:
 
-  1.1 Abhängigkeiten installieren (Debian 9.12 (Stretch)). Debian 10 funktioniert nicht?
-
-       sudo apt-get install git subversion python build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev wget time ecdsautils
+  1.1 Abhängigkeiten installieren (Debian 9.12 (Stretch)). Mit Debian 10 funktioniert es vermutlich nicht.
+  
+  Die Abhängigkeiten müssen als root installiert werden
+  
+       su <ENTER> Password <ENTER>
+       apt-get install git subversion python build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev wget time ecdsautils
        
+  nach der Installation root mit 'exit' wieder verlassen.
+      
   1.2 Gluon repo clonen
   
   Die nachfolgenden Schritte werden als User im Homeverzeichnis durchgeführt!
@@ -49,6 +54,11 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   2.3 Build durchführen für die in Radevormwald gänigen Geräte
   
        X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-64 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ramips-mt7621 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ipq40xx GLUON_BRANCH=stable
+      
+       ## Dem Buildkommando kann auch noch der Wert von DEFAULT_GLUON_RELEASE mitgegeben
+          werden. Dann sieht das Komando für ein Target z. B. so aus:
+       
+       X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable DEFAULT_GLUON_RELEASE=2019.1.2-rdv-1
        
             
        ## Mögliche Targets
