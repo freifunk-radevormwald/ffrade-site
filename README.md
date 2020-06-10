@@ -30,7 +30,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
        git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2019.1.x
        
        
-  1.3 Gwünschtes Tag setzen
+  1.3 Gewünschtes Tag setzen
        
        cd gluon-rdv
        git branch -a 
@@ -55,15 +55,15 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   
        X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-64 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ramips-mt7621 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ipq40xx GLUON_BRANCH=stable
       
-       ## Dem Buildkommando kann auch noch der Wert von DEFAULT_GLUON_RELEASE mitgegeben
-          werden. Dann sieht das Komando für ein Target z. B. so aus:
+       ## Dem Build-Kommando kann auch noch der Wert von DEFAULT_GLUON_RELEASE mitgegeben
+          werden. Dann sieht das Kommando für ein Target z. B. so aus:
        
        X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable DEFAULT_GLUON_RELEASE=2019.1.2-rdv-1
        
             
        ## Mögliche Targets
 
-		-ar71xx-generic		(für standard Geräte incl. Fritz!WLAN Repeater 450E)
+		-ar71xx-generic		(für Standard Geräte incl. Fritz!WLAN Repeater 450E)
 		-ar71xx-tiny		(für Geräte mit nur 4 MB Flash)
 		-ar71xx-nand
 		-ipq40xx		(für AVM FRITZ!Box 4040)
