@@ -33,6 +33,8 @@ GLUON_MULTIDOMAIN=0
 # build images for deprecated devices (e.g. ar71xx-tiny)
 GLUON_DEPRECATED ?= full
 
+GLUON_MULTIDOMAIN=0
+
 ##
 
 ##	GLUON_FEATURES
