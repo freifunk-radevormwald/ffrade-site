@@ -12,7 +12,7 @@ msgstr ""
 
 msgid "gluon-config-mode:welcome"
 msgstr ""
-"<p>"Fülle dieses Formular deinen Vorstellungen entsprechend aus und sende es ab. </p>"
+"<p>Fülle dieses Formular deinen Vorstellungen entsprechend aus und sende es ab.</p>"
 "<p>Bitte verwende diese Firmware nur, wenn Du den Freifunkknoten in Radevormwald "
 "betreiben möchtest. Ansonsten schaue gegebenenfalls unter "
 "<a href=\"https://freifunk.net/wie-mache-ich-mit/community-finden/\" target=\"_blank\">Community finden</a> "
