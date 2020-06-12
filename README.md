@@ -63,19 +63,19 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
             
        ## Mögliche Targets
 
-          ar71xx-generic	(Standard Geräte incl. Fritz!WLAN Repeater 450E)
-          ar71xx-tiny		(Geräte mit nur 4 MB Flash)
+          ar71xx-generic        (Standard Geräte incl. Fritz!WLAN Repeater 450E)
+          ar71xx-tiny           (Geräte mit nur 4 MB Flash)
           ar71xx-nand
           brcm2708-bcm2708
           brcm2708-bcm2709
-          mpc85xx-generic	(tp-link-tl-wdr4900)
+          mpc85xx-generic       (tp-link-tl-wdr4900)
           mpc85xx-p1020
-          ramips-mt7621		(Ubiquiti EdgeRouter X)
+          ramips-mt7621         (Ubiquiti EdgeRouter X)
           sunxi-cortexa7
           x86-generic
           x86-geode
           x86-64
-          ipq40xx		(AVM FRITZ!Box 4040 und GLi-Net)
+          ipq40xx               (AVM FRITZ!Box 4040 und GLi-Net)
           ramips-mt7620
           ramips-mt76x8
           ramips-rt305x
