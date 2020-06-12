@@ -63,24 +63,49 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
             
        ## Mögliche Targets
 
-		-ar71xx-generic		(für Standard Geräte incl. Fritz!WLAN Repeater 450E)
-		-ar71xx-tiny		(für Geräte mit nur 4 MB Flash)
-		-ar71xx-nand
-		-ipq40xx		(für AVM FRITZ!Box 4040)
-		-brcm2708-bcm2708
-		-brcm2708-bcm2709
-		-mpc85xx-generic	(für tp-link-tl-wdr4900-v1 Geräte)
-		-ramips-mt7621		(für Ubiquiti EdgeRouter X)
-		-sunxi-cortexa7
-		-x86-generic
-		-x86-geode
-		-x86-64
-		-ramips-mt7620
-		-ramips-mt76x8
-		-ramips-rt305x
+          ar71xx-generic        (Standard Geräte incl. Fritz!WLAN Repeater 450E)
+          ar71xx-tiny           (Geräte mit nur 4 MB Flash)
+          ar71xx-nand
+          brcm2708-bcm2708
+          brcm2708-bcm2709
+          mpc85xx-generic       (tp-link-tl-wdr4900)
+          mpc85xx-p1020
+          ramips-mt7621         (Ubiquiti EdgeRouter X)
+          sunxi-cortexa7
+          x86-generic
+          x86-geode
+          x86-64
+          ipq40xx               (AVM FRITZ!Box 4040 und GLi-Net)
+          ramips-mt7620
+          ramips-mt76x8
+          ramips-rt305x
+		
+	       
+  2.4 Ab Gluon 2019.1.x: Patch https://github.com/freifunk-radevormwald/patches einbinden
+  
+  Damit die Konten auf der Map (HopGlass) angezeigt werden, muss unter 
+  gluon-rdv/package/gluon-respondd/files/etc/init.d die Datei gluon-respondd gepatcht werden:
+  
+ ```
+ --- a/package/gluon-respondd/files/etc/init.d/gluon-respondd
++++ b/package/gluon-respondd/files/etc/init.d/gluon-respondd
+@@ -13,7 +13,7 @@ start_service() {
+        local clientdevs=$(for dev in $(echo "$ifdump" | jsonfilter -e "@.interface[@.interface='$(cat /lib/gluon/respondd/client.dev 2>/dev/null)' && @.up=true].device"); do echo " -i $dev -t $MAXDELAY";done;)
 
-       
-  2.4 Wenn das Kompilieren fehlschlägt
+        procd_open_instance
+-       procd_set_param command $DAEMON -d /usr/lib/respondd -p 1001 -g ff02::2:1001 $meshdevs -g ff05::2:1001 $clientdevs
++       procd_set_param command $DAEMON -d /usr/lib/respondd -p 1001 -g ff02::1 $clientdevs $meshdevs -g ff05::2:1001 $clientdevs
+        procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
+        procd_set_param stderr 1
+        procd_close_instance
+```
+  
+  An einer Automation, die beim Build das patchen übernimmt, muss noch gearbeitet werden. Die ./build.sh anderer 
+  Communitys habe ich noch nicht durchblickt und mit reinem Clonen auch nicht zum Laufen gebracht. Im Moment wird
+  der Build einmal durchlaufen lassen und dann die Datei im entsprechenden Verzeichnis von Hand editiert. Danach
+  starte ich ohne "make update" das Ganze noch ein mal.
+    
+  2.5 Wenn das Kompilieren fehlschlägt
   
        make -j1 V=s GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
        
@@ -118,4 +143,12 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
    5.2 Freifunk Nord - Firmware selbst kompilieren
    
        https://wiki.freifunk.net/Freifunk_Nord/Firmware_selbst_kompilieren
+       
+   5.3 Eulenfunk - Build-Prozess
+   
+        https://github.com/eulenfunk/firmware
+   
+   5.4 	Freifunk Hochstift - Build-System
+          
+       https://git.ffho.net/FreifunkHochstift/ffho-firmware-build
        
