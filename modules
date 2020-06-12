@@ -12,7 +12,6 @@
 #		the  git repository from where to clone the package feed
 #PACKAGES_MY_OWN_PACKAGES_REPO=https://github.com/.../my-own-packages.git
 
-
 ##	PACKAGES_$feedname_COMMIT
 #		the version/commit of the git repository to clone
 #PACKAGES_MY_OWN_PACKAGES_COMMIT=123456789aabcda1a69b04278e4d38f2a3f57e49
@@ -21,7 +20,7 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
-GLUON_SITE_FEEDS='ssidchanger eulenfunk'
+GLUON_SITE_FEEDS='ssidchanger eulenfunk ffm'
 
 ## gluon-ssid-changer von Freifunk-Nord
 #PACKAGES_FFN_REPO=https://github.com/freifunk-radevormwald/gluon-ssid-changer.git
@@ -39,10 +38,10 @@ PACKAGES_EULENFUNK_BRANCH=v2018.1.x
 #PACKAGES_FFRADE_COMMIT=31acfbe8cf678bc6745226f4d29e4ab81f7c5a2b
 #PACKAGES_FFRADE_BRANCH=v2019.1.x
 
-## ffffm-additional-wifi-json-info von freifunk-ffm
-#PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffm-packages.git
-#PACKAGES_FFM_COMMIT=1e1a3af97f401d21d7e08b80e196c86211dd6bc1
-#PACKAGES_FFM_BRANCH=master
+## ffffm-button-bind von rubo77
+PACKAGES_FFM_REPO=https://github.com/freifunk-radevormwald/ffffm-button-bind.git
+PACKAGES_FFM_COMMIT=3968a3f86e84cceab88cd58e7cc0ffbd71a599a1
+PACKAGES_FFM_BRANCH=2018.1.x
 
 ## freifunk aachen
 #GLUON_SITE_FEEDS="ssidchanger"
