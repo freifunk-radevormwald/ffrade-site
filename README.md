@@ -119,3 +119,11 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
    
        https://wiki.freifunk.net/Freifunk_Nord/Firmware_selbst_kompilieren
        
+   5.3 Eulenfunk - Build-Prozess
+   
+        https://github.com/eulenfunk/firmware
+   
+   5.4 	Freifunk Hochstift - Build-System
+          
+       https://git.ffho.net/FreifunkHochstift/ffho-firmware-build
+       
