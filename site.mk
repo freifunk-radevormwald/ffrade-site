@@ -5,7 +5,7 @@
 #               gluon relies on
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
-DEFAULT_GLUON_RELEASE := 2019.1.2-rdv-3
+DEFAULT_GLUON_RELEASE := 2020.1.3-rdv-2
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
 #               e.g.:
@@ -57,6 +57,7 @@ GLUON_FEATURES := \
 
 GLUON_SITE_PACKAGES := \
 	gluon-authorized-keys \
+	gluon-neighbour-info \
 	gluon-web-admin \
 	gluon-web-network \
 	respondd-module-airtime \
