@@ -1,10 +1,10 @@
 # Dokumentation
 
-https://gluon.readthedocs.io/en/v2019.1.x/
+https://gluon.readthedocs.io/en/v2020.1.x/
 
 Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 
-* Gluon 2019.1.2
+* Gluon 2020.1.3
 
 # Download der Firmware
 
@@ -27,14 +27,14 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   
   Die nachfolgenden Schritte werden als User im Homeverzeichnis durchgeführt!
 
-       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2019.1.x
+       git clone https://github.com/freifunk-gluon/gluon.git gluon-rdv -b v2020.1.x
        
        
   1.3 Gewünschtes Tag setzen
        
        cd gluon-rdv
        git branch -a 
-       git checkout v2019.1.2
+       git checkout v2020.1.3
        
   1.4 Freifunk Radevormwald Site clonen
 
@@ -45,6 +45,8 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
   2.1 Build vorbereiten
 
        make update
+       
+       !!danach bitte einmalig den Punkt 2.4 durchführen bzw. beachten, bevor es zum Punkt 2.3 geht!!
 
   
   2.2 Anzahl CPU Kerne X ermitteln
@@ -53,7 +55,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
     
   2.3 Build durchführen für die in Radevormwald gänigen Geräte
   
-       X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-64 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ramips-mt7621 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ipq40xx GLUON_BRANCH=stable
+       X=$(expr $(nproc) + 1) && make -j$X GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable && make -j$X GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=x86-64 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ramips-mt7621 GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ipq40xx-generic GLUON_BRANCH=stable && make -j$X GLUON_TARGET=ramips-mt76x8 GLUON_BRANCH=stable
       
        ## Dem Build-Kommando kann auch noch der Wert von DEFAULT_GLUON_RELEASE mitgegeben
           werden. Dann sieht das Kommando für ein Target z. B. so aus:
@@ -63,22 +65,32 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
             
        ## Mögliche Targets
 
-          ar71xx-generic        (Standard Geräte incl. Fritz!WLAN Repeater 450E)
-          ar71xx-tiny           (Geräte mit nur 4 MB Flash)
+          ar71xx-generic        (Standard Geräte incl. Fritz!WLAN Repeater 450E und D-Link DIR-505)
           ar71xx-nand
+          ar71xx-tiny           (Geräte mit nur 4 MB Flash) *1
+          ath79-generic
           brcm2708-bcm2708
           brcm2708-bcm2709
+          ipq40xx-generic       (AVM FRITZ!Box 4040 und GL.iNet GL-B1300)
+          ipq806x-generic
+          lantiq-xrx200         (AVM FRITZ!Box 7360, 7362, 7412)
+          lantiq-xway           (AVM FRITZ!Box 7312)
           mpc85xx-generic       (tp-link-tl-wdr4900)
           mpc85xx-p1020
+          ramips-mt7620
           ramips-mt7621         (Ubiquiti EdgeRouter X)
+          ramips-mt76x8         (TL-WR841N v13)
+          ramips-rt305x         *1
           sunxi-cortexa7
           x86-generic
           x86-geode
           x86-64
-          ipq40xx               (AVM FRITZ!Box 4040 und GLi-Net)
-          ramips-mt7620
-          ramips-mt76x8
-          ramips-rt305x
+	  
+	  *1 = The device or target is reaching its end of life soon.
+	  
+	  Eine Liste aller teoretisch unterstützten Geräte findet man hier:
+	  https://gluon.readthedocs.io/en/v2020.1.3/user/supported_devices.html
+	  
 		
 	       
   2.4 Ab Gluon 2019.1.x: Patch https://github.com/freifunk-radevormwald/patches einbinden
@@ -100,10 +112,9 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
         procd_close_instance
 ```
   
-  An einer Automation, die beim Build das patchen übernimmt, muss noch gearbeitet werden. Die ./build.sh anderer 
-  Communitys habe ich noch nicht durchblickt und mit reinem Clonen auch nicht zum Laufen gebracht. Im Moment wird
-  der Build einmal durchlaufen lassen und dann die Datei im entsprechenden Verzeichnis von Hand editiert. Danach
-  starte ich ohne "make update" das Ganze noch ein mal.
+  Einer Automation, die beim Build das patchen übernimmt, fehlt noch. Die ./build.sh anderer 
+  Communitys habe ich noch nicht durchblickt. Im Moment muss die Datei also noch von Hand nach
+  dem "make update" im entsprechenden Verzeichnis editiert werden.
     
   2.5 Wenn das Kompilieren fehlschlägt
   
