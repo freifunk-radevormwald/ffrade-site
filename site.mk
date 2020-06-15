@@ -57,7 +57,7 @@ GLUON_FEATURES := \
 
 GLUON_SITE_PACKAGES := \
 	gluon-authorized-keys \
-	gluon-neighbour-info \
+#	gluon-neighbour-info \
 	gluon-web-admin \
 	gluon-web-network \
 	respondd-module-airtime \
