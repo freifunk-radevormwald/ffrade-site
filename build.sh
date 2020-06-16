@@ -14,7 +14,7 @@ grep 'ff02:'  package/gluon-respondd/files/etc/init.d/gluon-respondd
 
 ## build firmware images
 branch="stable"             # Möglichkeiten sind: stable beta experimental
-release="2020.1.-rdv-2.2"
+release="2020.1.3-rdv-2.2"
 
 cores=$(($(nproc) + 1))
 
