@@ -6,7 +6,7 @@ popd
 make update
 
 ## apply eulenfunk respondd patch https://github.com/eulenfunk/firmware/raw/v2019.1.x/patches/fix-respondd-rsk.patch
-patchfile="patches/fix-respondd-rsk.patch"
+site/patchfile="patches/fix-respondd-rsk.patch"
 if ! patch -R -p1 -s -f --ignore-whitespace --dry-run < $patchfile; then
   patch -p1 --ignore-whitespace < $patchfile
 fi
