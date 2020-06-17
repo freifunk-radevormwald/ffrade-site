@@ -163,3 +163,7 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
           
        https://git.ffho.net/FreifunkHochstift/ffho-firmware-build
        
+   5.5  Nützlichze Linux Befehle für Freifuinker
+   
+       https://freifunk-halle.org/mediawiki/wiki/Linux_Befehle
+       
