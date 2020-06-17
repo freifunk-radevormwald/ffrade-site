@@ -167,3 +167,19 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
    
        https://freifunk-halle.org/mediawiki/wiki/Linux_Befehle
        
+
+# build.sh
+
+### Instructions for building the firmware images
+(Musteranleitung (noch anpassen))
+
+* git clone https://github.com/freifunk-gluon/gluon
+* cd gluon
+* git checkout -b v2019.1.2 v2019.1.2
+* git clone https://<site-ffw_git-repo-server>/site-ffw.git site
+* cd site
+* git checkout -b v2019.1.2 origin/v2019.1.2
+* cd ..
+* cp site/build.sh .
+* -- edit build.sh and uncomment the targets you'd like to be built --
+* ./build.sh
