@@ -34,3 +34,8 @@ make -j$cores GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=$branch DEFAULT_GLUON_RELEAS
 # make -j$cores GLUON_TARGET=ramips-mt7620 GLUON_BRANCH=$branch
 # make -j$cores GLUON_TARGET=ramips-mt76x8 GLUON_BRANCH=$branch
 # make -j$cores GLUON_TARGET=ramips-rt305x GLUON_BRANCH=$branch
+
+make manifest GLUON_BRANCH=stable && make manifest GLUON_BRANCH=beta && make manifest GLUON_BRANCH=experimental
+
+contrib/sign.sh /home/stefan/secret-steneu-ff-sig.key /home/stefan/gluon-rdv/output/images/sysupgrade/experimental.manifest
+
