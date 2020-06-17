@@ -183,3 +183,8 @@ Gluon Version auf der die Freifunk Radevormwald Firmware basiert:
 * cp site/build.sh .
 * -- edit build.sh and uncomment the targets you'd like to be built --
 * ./build.sh
+
+# git erklärt
+
+https://www.embedded-software-engineering.de/git-tutorial-git-und-die-wichtigsten-befehle-kennenlernen-a-725074/
+
